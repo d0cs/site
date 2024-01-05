@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dominando a Matematica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #080808;
+            color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+        }
+        .book-cover {
+            width: 70%;
+            max-width: 300px;
+            transition: transform 0.2s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            filter: brightness(100%);
+            box-shadow: 10px 10px 20px #000;
+            transition: 0.6s;
+        }
+        .book-cover:hover {
+            filter: brightness(150%);
+            transition: 0.6s;
+        }
+        .book-title {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .book-description {
+            font-size: 1.2em;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .purchase-button {
+            display: inline-block;
+            padding: 20px 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background-color: red;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none; /* Removendo o sublinhado */
+            font-family: 'Fira Code', cursive; /* Usando a fonte chamativa Bangers */
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 30px 10px rgba(107, 0, 0, 0.7);
+        }
+
+        .content-details {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #181818;
+        }
+        .content-details h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .content-details ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 1.2em;
+        }
+        .content-details span.keyword {
+            color: #f72020;
+        }
+        
+        .preview-checkout {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #181818;
+        }
+
+        .preview-checkout h1,h2 {
+            font-family: 'Fira Code', cursive;
+            margin: 0;
+        }
+
+        .preview-checkout .riscado {
+            text-decoration: line-through;
+            animation: redchange 2s ease infinite;
+        }
+
+        .preview-checkout hr {
+            border: none;
+            border-top: 2px solid #FF0000;
+        }
+        .floating-arrow {
+            position: relative;
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            animation: floating 0.5s ease infinite;
+        }
+
+        .floating-arrow .arrow-icon {
+            font-size: 80px;
+            color: rgba(255, 0, 0, 0.8);
+            animation: shining 1s ease infinite;
+        }
+
+        @keyframes redchange {
+            0%, 100% {
+                color: #e08787;
+            }
+            50% {
+                color: red;
+            }
+        }
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes shining {
+            0% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .purchase-button {
+                width: 400px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="book-title">Dominando A Matemática: Seja o Melhor!</h1>
+        <img src="https://cdn.discordapp.com/attachments/1151686196414660658/1192440537857392791/d99d8101-ba22-4701-ad1e-28df7646d0e3.png" alt="Capa do Livro" class="book-cover">
+    </div>
+    <div class="content">
+        <p class="book-description">Tem dificuldades com a matemática? O livro <font style="color: #f72020">“Dominando a matemática básica”</font> é um ebook que ensina os fundamentos da matemática de forma clara e acessível. Ele é ideal para estudantes que desejam melhorar suas habilidades em matemática básica e se preparar para o ensino médio e vestibulares. Além disso, o livro é uma ótima opção para quem deseja revisar conceitos matemáticos básicos.</p>
+        
+        <div class="floating-arrow">
+            <i class="arrow-icon fas fa-angles-down"></i>
+        </div>
+    </div>
+
+    <br>
+    <div class="preview-checkout">
+        <h1 style="color: yellow;">PREÇO NORMAL</h1>
+        <p>Dominando a Matemática Básica: <span class="riscado">R$37,90</span></p>
+        <p>Desconto: <span class="riscado">R$18,00</span></p>
+        <p>Total: R$19,90</span></p>
+        <hr>
+        <center>
+            <h1>HOJE POR APENAS</h1>
+            <h1 style="animation: redchange 2s ease infinite; font-size: 100px;">R$19,90</h1>
+            <a class="purchase-button" href="https://pay.kiwify.com.br/XeAf9ez">EU QUERO APROVEITAR O DESCONTO!</a>
+            <p style="font-family: Arial;">APROVEITE ANTES QUE ACABE!</p>
+        </center>
+    </div>
+    <br>
+</body>
+</html>
